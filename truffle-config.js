@@ -60,7 +60,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     rinkeby: {
-      provider: () => new HDWalletProvider(process.env.MNEMONIC, infuraUrl),
+      provider: () => new HDWalletProvider(mnemonic, infuraUrl),
       network_id: 4,       
       gas: 5500000,        // Ropsten has a lower block limit than mainnet
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
